@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Oraviharjun tila - Maatalous</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="author" content="Jenny">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="tyyli.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="background-image">
+        <header>
+            <h1 class="site-title">Oraviharjun tila</h1>
+            <input type="checkbox" id="check">
+            <label class="checkbtn" for="check">&#9776;     
+            </label>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">kotisivu</a></li>
+                        <li><a href="maatalous.html">maatalous</a></li>
+                        <li><a href="metsa.html">metsä</a></li>
+                        <li><a href="historia.html">historia</a></li>    
+                    </ul>
+                </nav>
+        </header>
+
+
+        <main>
+            <div class="content-container">
+                <div class="text-content">
+                    <h2>Maatalous tilallamme</h2>
+
+                        <p>Tilallamme harjoitamme myös maataloutta pienessä määrin. Peltoa tilalta löytyy vajaa 30 hehtaaria.
+                        Pelloillamme kasvaa pääosin heinää ja viljaa.</p> 
+             
+            
+                        <p> Pelloille ei käytetä lainkaan keinolannoitteita, vaan yhteistyökumppaniltamme Kuoppaharjun
+                        emolehmätilalta saamme kuivalantaa peltojemme lannoitteeksi. Kasvinsuojeluaineita käytämme pelloillamme hyvin harvoin.
+                        Tilaamme ei kuitenkaan ole luokiteltu luomutilaksi.
+                        Pelloiltamme saatava rehu kuljetetaan vastavuoroisesti Kuoppaharjun emolehmätilalle.</p>
+                        
+
+                        <div class="image-container">
+                        <img src="kuvat/heinakuorma.jpg" alt="Heinäkuorma ja traktori">
+                        <img src="kuvat/kylvokone.jpg" alt="Kylvökone traktorin perässä">
+                        <img src="kuvat/traktoriperakarry.jpg" alt="Traktori ja peräkärry">
+                        
+                         </div>
+                    </div>
+                </div>
+        </main>
+        </div>
+    <footer>
+    <p>Oraviharjun tila<br>Metsäpihantie 36<br>71680 Pulkonkoski<br><span>0400448300</span><br>Y-tunnus:1700823-6</p>
+    </footer>
+    <script>
+        const checkbox = document.getElementById('check');
+        checkbox.addEventListener('change', function () {
+          if (this.checked) {
+            document.body.classList.add('no-scroll');
+          } else {
+            document.body.classList.remove('no-scroll');
+          }
+        });
+      </script>  
+</body>
+</html>

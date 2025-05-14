@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Oraviharjun tila - Historia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="author" content="Jenny">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="tyyli.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="background-image">
+        <header>
+            <h1 class="site-title">Oraviharjun tila</h1>
+            <input type="checkbox" id="check">
+            <label class="checkbtn" for="check">&#9776;     
+            </label>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">kotisivu</a></li>
+                        <li><a href="maatalous.html">maatalous</a></li>
+                        <li><a href="metsa.html">metsä</a></li>
+                        <li><a href="historia.html">historia</a></li>      
+                    </ul>
+                </nav>
+        </header>
+<main>
+        <div class="content-container">
+            <div class="text-content"> 
+        <h2>Tilamme historiaa</h2>
+
+        <p>Tilamme historia ulottuu 80 vuoden päähän, vuoteen 1945. Ensimmäiset Okkolat saapuivat Maaningalle, kun Etelä-Karjalassa sijainnut Parikkala jäi rajan toiselle puolelle.
+            Okkolan veljekset Oskari ja Urho ostivat ensimmäisen tilansa Juvolan vuonna 1944, mutta pääsivät muuttamaan tilalle vasta helmikuussa 1945.
+            <br> <br> Myöhemmin Oskari ja hänen poikansa Vesa ostivat Juvolan tilaa ympäröiviä alueita Oravin ja Pihlajan. Kuusikymmentäluvun alussa Vesa osti Oraviharjun tilan perheelleen.
+            Oraviharjun tilalla asumme nykyään. <br>  Metsätiloja on ostettu lisää ajan saatossa, viimeisin vuonna 2023. <br>
+        </p>
+        <div class="image-container">
+            <img src="kuvat/vanhakuva.jpg" alt="Vanha kuva, jossa tilan omistaja" class="small-image left-image">
+            <img src="kuvat/vanhatila.jpg" alt="Tilamme kuva vuonna 1960" class="small-image center-image">
+            <img src = "kuvat/vanhakuvatraktori.jpg" alt="Lietteen ajoa 2000 luvun alussa.">
+        </div>
+        </div>
+        </div>
+    </body>
+</main>
+<footer>
+    <p>Oraviharjun tila<br>Metsäpihantie 36<br>71680 Pulkonkoski<br><span>0400448300</span><br>Y-tunnus:1700823-6</p>
+</footer>
+<script>
+    const checkbox = document.getElementById('check');
+    checkbox.addEventListener('change', function () {
+      if (this.checked) {
+        document.body.classList.add('no-scroll');
+      } else {
+        document.body.classList.remove('no-scroll');
+      }
+    });
+  </script>  
+</html>

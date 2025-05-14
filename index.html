@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Oraviharjun tila</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="author" content="Jenny">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="tyyli.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+        <header>
+            <h1 class="site-title">Oraviharjun tila</h1>
+            <input type="checkbox" id="check">
+            <label class="checkbtn" for="check">&#9776;     
+            </label>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">kotisivu</a></li>
+                        <li><a href="maatalous.html">maatalous</a></li>
+                        <li><a href="metsa.html">metsä</a></li>
+                        <li><a href="historia.html">historia</a></li>      
+                    </ul>
+                </nav>
+        </header>
+
+        <main>
+            <div class="content-container">
+                <div class="text-content">
+                    <h2>Tietoa tilastamme</h2>
+                    <p>Oraviharjun tila on aktiivinen maatila, maaseudun keskellä Pohjois-Savossa.
+                    Oraviharjun tilaan kuuluu kuusi erillistä metsätilaa, noin 70 kilometrin säteellä.</p>
+                    <p>Tilallamme harjoitetaan maa- ja metsätaloutta. Toimintamme on ympäristöystävällistä ja vastuullista.
+                    Tilakeskuksemme ympärillä on vajaa 30 hehtaaria peltoa.</p>
+                </div>
+                <div class="map-box">
+                        <h3>Paikkamme</h3>
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.1114350938938!2d27.22135157768394!3d63.14284480015283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46849b871f671e73%3A0x752ae3fc17817778!2sMets%C3%A4pihantie%2036%2C%2071680%20Kuopio!5e1!3m2!1sfi!2sfi!4v1744046222329!5m2!1sfi!2sfi"
+                          allowfullscreen=""
+                          loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                </div>
+            </div>
+        </main>
+    
+    <footer>
+        <p>Oraviharjun tila<br>Metsäpihantie 36<br>71680 Pulkonkoski<br><span>0400448300</span><br>Y-tunnus:1700823-6</p>
+    </footer>
+    <script>
+        const checkbox = document.getElementById('check');
+        checkbox.addEventListener('change', function () {
+          if (this.checked) {
+            document.body.classList.add('no-scroll');
+          } else {
+            document.body.classList.remove('no-scroll');
+          }
+        });
+      </script>   
+</body>
+</html>

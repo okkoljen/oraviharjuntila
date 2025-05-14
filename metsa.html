@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Oraviharjun tila - Metsä</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="author" content="Jenny">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="tyyli.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="background-image">
+        <header>
+            <h1 class="site-title">Oraviharjun tila</h1>
+            <input type="checkbox" id="check">
+            <label class="checkbtn" for="check">&#9776;</label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">kotisivu</a></li>
+                    <li><a href="maatalous.html">maatalous</a></li>
+                    <li><a href="metsa.html">metsä</a></li>
+                    <li><a href="historia.html">historia</a></li>      
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="content-container">
+                <div class="text-content">
+        <h2>Tilamme metsät</h2>
+
+        <p> Harjoitamme aktiivisesti metsätaloutta tilallamme. Tilaamme kuuluu noin 180 hehtaaria metsää.
+            Metsämme ovat hyvässä kasvukunnossa. Omistamamme suometsät ovat saaneet tuhkalannoituksen
+            muutama vuosi sitten. Kasvatuslannoituksia on tehty laajasti myös kangasmetsillemme.
+            Kaksi metsätiloistamme sijaitsee järven rannalla, joista toinen saaressa, kummassakin kohteessa on kesämökki.
+
+        </p>
+
+
+
+        <h2>Metsiemme harventamisesta</h2>
+
+        <p> Metsistämme hakataan vuosittain noin 50-70 prosenttia metsän vuosittaisesta kasvusta.
+            Puuta myydään joka vuosi yhdelle tai useammalle ostajalle.
+            Puuta myymme esimerkiksi Keitele Forestille, UPM:lle, Metsä Groupille, sekä HASA:lle.
+            Metsistämme syntyvä energiapuu myydään Roteri Oy:lle.
+            Elinkeinoyhtymä Voutilainen tekee tilallemme motohakkuita, sekä kaivinkonetöitä.
+            Hoidamme itse metsiemme raivaukset, istutukset, sekä energiapuuhakkuut.
+        </p>
+
+                    <div class="image-container">
+                        <img src="kuvat/puupino.jpg" alt="Puupino">
+                        <img src="kuvat/puukuormatraktori.jpg" alt="Puukuorma, traktori ja traktorin puukuormaaja">
+                        <img src="kuvat/lannoitusmetsä.jpg" alt="Helikopteri lannoittaa metsää">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>Oraviharjun tila<br>Metsäpihantie 36<br>71680 Pulkonkoski<br><span>0400448300</span><br>Y-tunnus:1700823-6</p>
+    </footer>
+
+    <script>
+        const checkbox = document.getElementById('check');
+        checkbox.addEventListener('change', function () {
+            if (this.checked) {
+                document.body.classList.add('no-scroll');
+            } else {
+                document.body.classList.remove('no-scroll');
+            }
+        });
+    </script>
+</body>
+</html>
